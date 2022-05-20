@@ -21,7 +21,7 @@ nav {
 }
 nav a {
   padding: 20px;
-  Font-weight: bold;
+  font-weight: bold;
 }
 
 .darkcenter {
@@ -47,4 +47,18 @@ nav a {
 }
 #task1 img {
   border-radius: 50px;
+}
+
+#task3 {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  color: #333;
+  text-align: center;
+  font-size: 2rem;
+}
+#task3 a {
+  color: #333;
+  font-weight: 600;
+  padding: 3vw 0 10vw 0;
 }/*# sourceMappingURL=App.css.map */
