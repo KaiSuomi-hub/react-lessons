@@ -1,4 +1,4 @@
-import { useState, React } from "react";
+import React, { useState  } from "react";
 
 
 
@@ -8,6 +8,7 @@ function Input() {
 
 		<div className="state" >
 			<h4 className="output">{text}</h4>
+			<p>Font is at 2 rem</p>
 			<input type="text" className="input-field"
 			placeholder="..." onChange={getInput => setText(getInput.target.value)}/>
 		</div>

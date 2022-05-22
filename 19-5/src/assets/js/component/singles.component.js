@@ -1,5 +1,5 @@
 import React from "react";
-import { singlesData } from "../data/singles.data";
+import singlesData  from "../data/singles.data";
 
 const Singles = () => {
     const listItems = singlesData.map((item) => (

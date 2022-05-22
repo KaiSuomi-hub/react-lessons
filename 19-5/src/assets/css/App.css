@@ -49,6 +49,13 @@ nav a {
   border-radius: 50px;
 }
 
+#task2 {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  color: #333;
+}
+
 #task3 {
   width: 100%;
   display: grid;
