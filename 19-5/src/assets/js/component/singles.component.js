@@ -1,14 +1,13 @@
 import React from "react";
-import { singlesData } from "../data/singles.data";
-
+import singlesData  from "../data/singles.data";
 
 const Singles = () => {
-
-	let dd = 'dd';
-    return (
-		<div>{ dd }</div>
-
-    );
+    const listItems = singlesData.map((item) => (
+        <p >
+            {item.title} - year: {item.year} - from album: {item.album}{" "}
+        </p>
+    ));
+    return <div>{listItems}</div>;
 };
 
 export default Singles;
