@@ -1,6 +1,6 @@
 import "./App.css";
 import axios from "axios";
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import apikey from "./apikey";
 
 function App() {
@@ -9,12 +9,17 @@ function App() {
     const [data, setData] = useState("");
     let location = text;
     let weatherUrl = `http://api.weatherapi.com/v1/current.json?key=${apikey}&q=${location}`;
-    async function getData() {
-            const res = await axios.get(weatherUrl); //haetaan vastaus
-            setData(res.data.current); //here we get the json and select current from it
-            // console.log(data);
-        }
-    getData();
+
+    useEffect(() => {
+      async function getData() {
+          const res = await axios.get(weatherUrl); //haetaan vastaus
+          setData(res.data.current); //here we get the json and select current from it
+          // console.log(data);
+      }
+      getData();
+  });//kysy mit nm square bracketit teki
+
+
     return (
         <div className="App">
             <div>
@@ -36,7 +41,7 @@ function App() {
                         onClick={(event) => {
                             setText(inputText);
                             event.preventDefault();
-                            // console.log(inputText); //
+                            console.log(inputText); //
 
                         }}
                     ></input>
