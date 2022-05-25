@@ -1,11 +1,23 @@
-.App {
-  width: 500px;
-  display: grid;
-  align-content: center;
+@media (max-width: 800px) {
+  .App {
+    grid-template-columns: 1fr;
+  }
+}
+.Task1 {
   background-color: #aaa;
   border-radius: 50px;
   padding: 50px;
   margin: 50px;
+}
+
+.Task2 {
+  background-color: #aaa;
+  border-radius: 50px;
+  padding: 50px;
+  margin: 50px;
+  display: flex;
+  gap: 1rem;
+  grid-template-rows: 1fr 1fr;
 }
 
 body {
