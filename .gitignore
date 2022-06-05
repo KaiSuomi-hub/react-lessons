@@ -13,6 +13,8 @@ apikey.js
 *.pdf
 *.zip
 *.rar
+#don't upload builds
+*/build/
 
 #GIT
 .git/
